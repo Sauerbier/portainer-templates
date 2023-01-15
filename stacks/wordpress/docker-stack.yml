@@ -21,7 +21,7 @@ services:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
-    db_data:
+    volumes:
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
 
 volumes:
